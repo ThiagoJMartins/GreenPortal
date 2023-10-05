@@ -9,11 +9,10 @@ function App() {
    const [characters, setCharacters] = useState([])
 
    const onSearch = (id) => {
-      // axios(`https://rym2.up.railway.app/api/character/${id}?key=pi-thiagojmartins`).then(
-         axios (`https://rickandmortyapi.com/api/character/${id}`).then(
+      axios(`https://rym2.up.railway.app/api/character/${id}?key=pi-thiagojmartins`).then(
          ({data}) => {
             if (data.name) {
-               setCharacters(oldCharacters => [...oldCharacters, data]);
+               setCharacters(oldChars => [...oldChars, data]);
             }else {
                window.alert('No se encontró personaje con este ID')
             }
