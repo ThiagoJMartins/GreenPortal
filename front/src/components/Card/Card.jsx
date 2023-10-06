@@ -18,11 +18,8 @@ export default function Card({
       <div>
 
          <button onClick={() => onClose(id)}>X</button>
-
-         <Link to={`/detail/${id}`}> 
-            <h2>{name}</h2> 
-         </Link>
-         
+ 
+         <h2>{name}</h2>   
          <h4>STATUS | {status}</h4>
          <h4>SPECIES | {species}</h4>
          <h4>GENDER | {gender}</h4>
