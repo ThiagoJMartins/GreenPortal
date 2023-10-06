@@ -12,19 +12,20 @@ export default function Nav(props) {
     return (
         <div>
             <Link to={'/home'}>
-                <button>Home</button>
+                <button>🏠Home</button>
             </Link>
             
             <Link to={'/about'}>
-                <button>About</button>
+                <button>❓About</button>
             </Link>
 
-            <button onClick={props.logout}>Logout</button>
+            <button onClick={props.logout}>⤴️Logout</button>
 
             <hr />
 
             <SearchBar onSearch={props.onSearch}/>
-            <button onClick={handleRandom}>Random Character</button>
+            <button onClick={handleRandom}>Random Character🎲</button>
+
         </div>
     )
 }

@@ -54,6 +54,8 @@ function App() {
       if (userData.email === EMAIL && userData.password === PASSWORD){
           setAccess(true)
           navigate('/home')
+      }else{
+         alert('Incorrect email or password, verify your data')
       }
    }
 

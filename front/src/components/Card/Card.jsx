@@ -16,8 +16,8 @@ export default function Card({
 {
    return (
       <div>
-
-         <button onClick={() => onClose(id)}>X</button>
+         <br /><br />
+         <button onClick={() => onClose(id)}>❌</button>
  
          <h2>{name} | {id} </h2>
          <h4>STATUS | {status}</h4>

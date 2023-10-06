@@ -29,22 +29,30 @@ const Form = ({ login }) => {
         login(userData);
       };
 
+      const [inputType, setInputType] = useState('password')
+
+      const viewPass = () => {
+        const newType = inputType === 'password' ? 'text' : 'password'
+        setInputType(newType)
+      }
+
     return ( 
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="email"></label>
-                        <input type="text" name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
+                        <input type="text"  name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
                     
                     <span>{errors.email}</span>
                 </div>
                 
                 <div>
                     <label htmlFor="password"></label>
-                        <input type="password" name="password" value={userData.password} onChange={handleChange} placeholder="Password"/>
+                        <button type="button" onClick={viewPass}>👁️</button>
+                        <input type={inputType} name="password" value={userData.password} onChange={handleChange} placeholder="Password"/>
                     <span>{errors.password}</span>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit">👉🏼Submit👈🏼</button>
             </form>
      );
 }
