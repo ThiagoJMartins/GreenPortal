@@ -34,7 +34,7 @@ function Detail() {
         <div>
         {character.name? (
             <>
-                <h2>{character.name}</h2>
+                <h2>{character.name} | {character.id}</h2>
                 <h4>STATUS | {character.status}</h4>
                 <h4>SPECIES | {character.species}</h4>
                 <h4>GENDER | {character.gender}</h4>

@@ -19,7 +19,7 @@ export default function Card({
 
          <button onClick={() => onClose(id)}>X</button>
  
-         <h2>{name}</h2>   
+         <h2>{name} | {id} </h2>
          <h4>STATUS | {status}</h4>
          <h4>SPECIES | {species}</h4>
          <h4>GENDER | {gender}</h4>

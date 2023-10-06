@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 
 
 export default function Nav(props) {
+
+    function handleRandom(){
+        props.getRandomCharacter()
+    }
+
     return (
         <div>
             <Link to={'/home'}>
@@ -14,7 +19,12 @@ export default function Nav(props) {
                 <button>About</button>
             </Link>
 
+            <button onClick={props.logout}>Logout</button>
+
+            <hr />
+
             <SearchBar onSearch={props.onSearch}/>
+            <button onClick={handleRandom}>Random Character</button>
         </div>
     )
 }
