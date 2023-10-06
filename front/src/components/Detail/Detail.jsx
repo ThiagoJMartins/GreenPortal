@@ -42,7 +42,7 @@ function Detail() {
                 <img src={character.image} alt={character.name} />
             </>
         ): (
-            <h2>Aguarde un momento...</h2>
+            <h2>Loading...</h2>
         )}
         </div>
     );
