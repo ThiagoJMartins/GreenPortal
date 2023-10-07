@@ -1,5 +1,6 @@
-import SearchBar from "../SearchBar/SearchBar";
+import SearchBar from "./SearchBar";
 import { Link } from "react-router-dom";
+import './navbar.css'
 //!----------------------------------------------------+/
 
 
@@ -10,22 +11,24 @@ export default function Nav(props) {
     }
 
     return (
-        <div>
-            <Link to={'/home'}>
-                <button>🏠Home</button>
-            </Link>
-            
+        <div className="navbar">
             <Link to={'/about'}>
-                <button>❓About</button>
+                <button className="button" id="about">❓About</button>
             </Link>
 
-            <button onClick={props.logout}>⤴️Logout</button>
+            <Link to={'/home'}>
+                <button className="button" id="home">🏠Home</button>
+            </Link>
+            
+
+            <button onClick={props.logout} className="button" id="logout">⤴️Logout</button>
 
             <hr />
 
             <SearchBar onSearch={props.onSearch}/>
-            <button onClick={handleRandom}>Random Character🎲</button>
+            <button onClick={handleRandom} className="button" id="random">Random Character🎲</button>
 
+            {/* <img src='../../public/rym-ship.png' alt="rym" className='form-nav-img'/> */}
         </div>
     )
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from 'react'
 import validate from "../validation";
+import './form.css'
 //!----------------------------------------------------+/
 
 const Form = ({ login }) => {
