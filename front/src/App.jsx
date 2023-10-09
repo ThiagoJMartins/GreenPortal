@@ -15,12 +15,14 @@ import Form from './components/Form/Form';
 function App() {
 
    const APIKEY = 'pi-thiagojmartins'
-   const { pathname } = useLocation()
-   const [ access, setAccess ] = useState(false)
    const EMAIL = 'thiagodev.martins@gmail.com'
    const PASSWORD = 'Thiago228'
+
+   const [ access, setAccess ] = useState(false)
    const [characters, setCharacters] = useState([])
+   const { pathname } = useLocation()
    const navigate = useNavigate()
+
 
    const onSearch = (id) => {
 
@@ -28,8 +30,11 @@ function App() {
          `https://rym2.up.railway.app/api/character/${id}?key=${APIKEY}`
       ).then(({data}) => {
 
+
             if (data.name) {
-               setCharacters(oldChars => [...oldChars, data]);
+               const characterExists = characters.filter((char) => char.id === data.id)
+               if (characterExists.length === 0) setCharacters(oldChars => [...oldChars, data]);
+               else window.alert('This character has already been added')
             }else {
                window.alert('Not character found with this ID')
 

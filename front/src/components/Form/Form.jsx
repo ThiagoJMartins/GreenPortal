@@ -1,5 +1,4 @@
-import { useState } from "react";
-import React from 'react'
+import React, { useState } from 'react'
 import validate from "../validation";
 import './form.css'
 //!----------------------------------------------------+/
@@ -11,10 +10,7 @@ const Form = ({ login }) => {
         password: "",
       });
     
-      const[errors, setErrors] = useState({
-        email: "",
-        password: "",
-      });
+      const[errors, setErrors] = useState({});
     
       const handleChange = (event) => {
         const property = event.target.name;
@@ -38,22 +34,23 @@ const Form = ({ login }) => {
       }
 
     return ( 
-            <form onSubmit={handleSubmit}>
+            <form className="form">
                 <div>
-                    <label htmlFor="email"></label>
-                        <input type="text"  name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
-                    
+                    <label htmlFor="email">Email</label>
+                    <input type="text"  name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
+                    <br />
                     <span>{errors.email}</span>
                 </div>
                 
                 <div>
-                    <label htmlFor="password"></label>
-                        <button type="button" onClick={viewPass}>👁️</button>
-                        <input type={inputType} name="password" value={userData.password} onChange={handleChange} placeholder="Password"/>
+                    <label htmlFor="password">Password</label>
+                    <input type={inputType} name="password" value={userData.password} onChange={handleChange} placeholder="Password"/>
+                    <button type="button" onClick={viewPass}>👁️</button>
+                    <br />
                     <span>{errors.password}</span>
                 </div>
 
-                <button type="submit">👉🏼Submit👈🏼</button>
+                <button type="submit" onClick={handleSubmit}>👉🏼Submit👈🏼</button>
             </form>
      );
 }

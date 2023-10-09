@@ -26,7 +26,7 @@ export default function Nav(props) {
             <hr />
 
             <SearchBar onSearch={props.onSearch}/>
-            <button onClick={handleRandom} className="button" id="random">Random Character🎲</button>
+            <button onClick={handleRandom} className="button" id="random">🎲Random Character🎲</button>
 
             {/* <img src='../../public/rym-ship.png' alt="rym" className='form-nav-img'/> */}
         </div>

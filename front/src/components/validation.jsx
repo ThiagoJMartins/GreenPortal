@@ -1,7 +1,8 @@
 const validate = (form) => {
     let errors = {};
+    let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
 
-    if (!/^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{3})+$/.test(form.email)) { 
+    if (!regexEmail.test(form.email)) { 
         errors.email = "Invalid email";
     }
 
@@ -13,11 +14,11 @@ const validate = (form) => {
         errors.email = "Email must be less than 25 characters"
     }
 
-    if (form.password.length <= 5 || form.password.length >= 11) {
+    if (form.password.length < 6 || form.password.length > 10) {
         errors.password = "Password must be between 6 and 10 characters";
     }
 
-    if(!/[0-9]/.test(form.password)){
+    if(!/\d/.test(form.password)){
         errors.password= "The password must contain a number"
     }
 
