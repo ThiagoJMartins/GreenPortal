@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import validate from "../validation";
+import validate from "./validation";
 import './form.css'
 //!----------------------------------------------------+/
 

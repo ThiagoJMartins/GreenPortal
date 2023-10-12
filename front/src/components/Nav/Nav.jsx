@@ -12,14 +12,14 @@ export default function Nav(props) {
 
     return (
         <div className="navbar">
-            <Link to={'/about'}>
-                <button className="button" id="about">❓About</button>
-            </Link>
 
             <Link to={'/home'}>
                 <button className="button" id="home">🏠Home</button>
             </Link>
-            
+
+            <Link to={'/about'}>
+                <button className="button" id="about">❓About</button>
+            </Link>
 
             <button onClick={props.logout} className="button" id="logout">⤴️Logout</button>
 
