@@ -1,6 +1,6 @@
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
-import './navbar.css'
+import styles from "./Nav.module.scss";
 //!----------------------------------------------------+/
 
 
@@ -11,24 +11,27 @@ export default function Nav(props) {
     }
 
     return (
-        <div className="navbar">
+        <div className={styles.navContainer}>
 
-            <Link to={'/home'}>
-                <button className="button" id="home">🏠Home</button>
-            </Link>
+            <div className={styles.logo}>
+                <img src="../../public/rickandmorty.png" alt="logo" />
+            </div>
 
-            <Link to={'/about'}>
-                <button className="button" id="about">❓About</button>
-            </Link>
+            <div className={styles.navigator}>
+                <Link to={'/home'}>
+                    <button className="button" id="home">Home</button>
+                </Link>
 
-            <button onClick={props.logout} className="button" id="logout">⤴️Logout</button>
+                <Link to={'/about'}>
+                    <button className="button" id="about">About</button>
+                </Link>
 
-            <hr />
+                <button onClick={props.logout} className="button" id="logout">Logout</button>
 
-            <SearchBar onSearch={props.onSearch}/>
-            <button onClick={handleRandom} className="button" id="random">🎲Random Character🎲</button>
-
-            {/* <img src='../../public/rym-ship.png' alt="rym" className='form-nav-img'/> */}
+                <SearchBar onSearch={props.onSearch}/>
+                <button onClick={handleRandom} className="button" id="random">Random Character</button>
+                
+            </div>
         </div>
     )
 }

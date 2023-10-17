@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import validate from "./validation";
-import './form.css'
+import { useState } from 'react'
+import validate from "../../utils/validation";
+import './form.scss'
 //!----------------------------------------------------+/
 
 const Form = ({ login }) => {
@@ -50,7 +50,7 @@ const Form = ({ login }) => {
                     <span>{errors.password}</span>
                 </div>
 
-                <button type="submit" onClick={handleSubmit}>👉🏼Submit👈🏼</button>
+                <button type="submit" onClick={handleSubmit}>Submit</button>
             </form>
      );
 }

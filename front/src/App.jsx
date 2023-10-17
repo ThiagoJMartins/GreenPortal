@@ -2,7 +2,6 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, useNavigate} from 'react-router-dom';
 //!----------------------------------------------------+/
-import './App.css';
 import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
 import About from './components/About/About';
@@ -15,8 +14,11 @@ import Form from './components/Form/Form';
 function App() {
 
    const APIKEY = 'pi-thiagojmartins'
-   const EMAIL = 'thiagodev.martins@gmail.com'
-   const PASSWORD = 'Thiago228'
+   const EMAIL = ''
+   const PASSWORD = ''
+   //! disabled creddentials
+   // const EMAIL = 'thiagodev.martins@gmail.com'
+   // const PASSWORD = 'Thiago228'
 
    const [ access, setAccess ] = useState(false)
    const [characters, setCharacters] = useState([])
