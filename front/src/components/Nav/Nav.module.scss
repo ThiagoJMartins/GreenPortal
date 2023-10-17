@@ -1,4 +1,52 @@
 .navContainer{
-    background-color: $primary-color;
-    min-height: 160px;
+    background-color: #00000039;
+    min-height: 50px;
+    padding: 0px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include sm{
+        flex-direction: column;
+        padding: 8px 0px;
+    }
+
+    .logo{
+        flex: 1;
+    }
+    
+}
+
+
+.navigator{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    @include sm{
+        width: 100%;
+    }
+}
+
+
+.wrapperItems{
+    display: flex;
+    gap: 12px;     
+}
+
+
+.linkNav{
+    text-decoration: none;
+    color: inherit;
+};
+
+
+.itemNav{
+    color: $white;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover{
+        color: $secondary-color;
+    }
 }

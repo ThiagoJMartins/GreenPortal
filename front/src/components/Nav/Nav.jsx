@@ -1,37 +1,41 @@
 import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
+import Logo from "../../../public/Logo.svg"
 import styles from "./Nav.module.scss";
 //!----------------------------------------------------+/
 
 
 export default function Nav(props) {
 
-    function handleRandom(){
-        props.getRandomCharacter()
-    }
 
     return (
         <div className={styles.navContainer}>
 
             <div className={styles.logo}>
-                <img src="../../public/rickandmorty.png" alt="logo" />
+                <img src={Logo} alt="logo" width={200} />
             </div>
 
             <div className={styles.navigator}>
-                <Link to={'/home'}>
-                    <button className="button" id="home">Home</button>
-                </Link>
+                <div className={styles.searchNav}>
+                    <SearchBar onSearch={props.onSearch}/>
+                </div>
 
-                <Link to={'/about'}>
-                    <button className="button" id="about">About</button>
-                </Link>
+                <div className={styles.wrapperItems}>
+                    <Link to={'/home'} className={styles.linkNav}>
+                        <span className={styles.itemNav} id="home">Home</span>
+                    </Link>
 
-                <button onClick={props.logout} className="button" id="logout">Logout</button>
+                    <Link to={'/about'} className={styles.linkNav}>
+                        <span className={styles.itemNav} id="about">About</span>
+                    </Link>
+                </div>
 
-                <SearchBar onSearch={props.onSearch}/>
-                <button onClick={handleRandom} className="button" id="random">Random Character</button>
-                
+                <div className={styles.wrapperItems}>
+                    <span onClick={props.logout} className={styles.itemNav} id="logout">Logout</span>
+                </div>
+
             </div>
+
         </div>
     )
 }
