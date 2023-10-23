@@ -34,8 +34,12 @@ const Form = ({ login }) => {
             alignItems: 'center',
           }}>
             <form className={styles.container}>
+              <div>
+                <img className={styles.logo} src="../../public/portal.png" alt="" />
+              </div>
               <label>Email</label>
               <input 
+                className={styles.entries}
                 placeholder="Email"
                 type="text"  
                 value={userData.email} 
@@ -46,6 +50,7 @@ const Form = ({ login }) => {
               
               <label>Password</label>
               <input 
+                className={styles.entries}
                 placeholder="Password"
                 type='password' 
                 value={userData.password} 
@@ -53,7 +58,7 @@ const Form = ({ login }) => {
                 onChange={handleChange} 
               />
               <span className={styles.warning}>{errors.password}</span>
-
+              <br />
               <button className={styles.boton} type="submit" onClick={handleSubmit}>Submit</button>
             </form>
           </div>
