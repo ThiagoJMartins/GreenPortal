@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Detail from './components/Detail/Detail'
 import Error from './components/Error/Error'
 import Form from './components/Form/Form';
+import Favourites from './components/Favourites/Favourites';
 //!----------------------------------------------------+/
 
 
@@ -83,6 +84,7 @@ function App() {
          <Routes>
             <Route path='/home' element={ <Cards characters={characters} onClose={onClose} /> } />
             <Route path='/about' element={ <About /> } />
+            <Route path='/favourites' element={ <Favourites />} />
             <Route path='/detail/:id' element={ <Detail /> } />
             <Route path='*' element={ <Error /> } />
             <Route path='/' element={ <Form login={login}/> } />

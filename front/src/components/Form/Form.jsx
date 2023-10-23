@@ -26,32 +26,37 @@ const Form = ({ login }) => {
         login(userData);
       };
 
-      const [inputType, setInputType] = useState('password')
-
-      const viewPass = () => {
-        const newType = inputType === 'password' ? 'text' : 'password'
-        setInputType(newType)
-      }
 
     return ( 
-            <form className="form">
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input type="text"  name="email" value={userData.email} onChange={handleChange} placeholder="Email" />
-                    <br />
-                    <span>{errors.email}</span>
-                </div>
-                
-                <div>
-                    <label htmlFor="password">Password</label>
-                    <input type={inputType} name="password" value={userData.password} onChange={handleChange} placeholder="Password"/>
-                    <button type="button" onClick={viewPass}>👁️</button>
-                    <br />
-                    <span>{errors.password}</span>
-                </div>
+          <div style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+            <form className={styles.container}>
+              <label>Email</label>
+              <input 
+                placeholder="Email"
+                type="text"  
+                value={userData.email} 
+                name="email" 
+                onChange={handleChange} 
+              />
+              <span className={styles.warning}>{errors.email}</span>
+              
+              <label>Password</label>
+              <input 
+                placeholder="Password"
+                type='password' 
+                value={userData.password} 
+                name="password" 
+                onChange={handleChange} 
+              />
+              <span className={styles.warning}>{errors.password}</span>
 
-                <button type="submit" onClick={handleSubmit}>Submit</button>
+              <button className={styles.boton} type="submit" onClick={handleSubmit}>Submit</button>
             </form>
+          </div>
      );
 }
 

@@ -17,9 +17,6 @@ export default function SearchBar(props){
       setId('')
    }
 
-   function handleRandom(){
-      props.getRandomCharacter()
-  }
 
   const handleKeyDown = (event) => {
    if (event.key === 'Enter'){
@@ -38,8 +35,7 @@ export default function SearchBar(props){
             onKeyDown={handleKeyDown}
          />
          
-         <button onClick={() => handleSearch(id)} className={styles.searchbutton}>➕</button>
-         <button onClick={handleRandom} className={styles.randombutton}>🎲</button>
+         <button className={styles.searchbutton} onClick={() => handleSearch(id)}>🔍</button>
       </div>
    );
 }

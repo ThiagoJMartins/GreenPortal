@@ -15,22 +15,27 @@ export default function Nav(props) {
                 <img src={Logo} alt="logo" width={200} />
             </div>
 
-            <div className={styles.navigator}>
-                <div className={styles.searchNav}>
-                    <SearchBar onSearch={props.onSearch}/>
-                </div>
-
+            <div className={styles.secondSection}>
                 <div className={styles.wrapperItems}>
                     <Link to={'/home'} className={styles.linkNav}>
                         <span className={styles.itemNav} id="home">Home</span>
                     </Link>
 
+
+                    <Link to={'/favourites'} className={styles.linkNav}>
+                        <span className={styles.itemNav} id="logout">Favs</span>
+                    </Link>
+                </div>
+                
+                <div className={styles.searchNav}>
+                    <SearchBar onSearch={props.onSearch}/>
+                </div>
+
+
+                <div className={styles.wrapperItems}>
                     <Link to={'/about'} className={styles.linkNav}>
                         <span className={styles.itemNav} id="about">About</span>
                     </Link>
-                </div>
-
-                <div className={styles.wrapperItems}>
                     <span onClick={props.logout} className={styles.itemNav} id="logout">Logout</span>
                 </div>
 

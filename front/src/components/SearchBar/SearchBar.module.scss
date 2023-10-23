@@ -4,7 +4,7 @@
     width: 180px;
     height: 25px;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 6px;
 
     input{
         border: none;
@@ -19,18 +19,8 @@
         position: absolute;
         border: none;
         background-color: inherit;
-        border-radius: 3px;
+        border-radius: 7px;
         right: 0;
-        cursor: pointer;
-        align-items: center;
-    }
-
-    .randombutton{
-        position: absolute;
-        border: none;
-        background-color: white;
-        border-radius: 3px;
-        height: 25px;
         cursor: pointer;
     }
 }
