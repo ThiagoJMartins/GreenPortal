@@ -17,28 +17,36 @@
 .logo{
     height: 150px;
     width: 150px;
-    -webkit-animation: logo-animation 3s linear infinite reverse none;
-    animation: logo-animation 3s linear infinite reverse none;
+    -webkit-animation: logo-animation 3s linear infinite both;
+        animation: logo-animation 3s linear infinite both;
 }
 
 @-webkit-keyframes logo-animation {
     0% {
-        -webkit-transform: rotate(0);
-            transform: rotate(0);
+      -webkit-transform: scale(0.8) rotateZ(0);
+              transform: scale(0.8) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(1.25) rotateZ(180deg);
+              transform: scale(1.25) rotateZ(180deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+      -webkit-transform: scale(0.8) rotateZ(360deg);
+              transform: scale(0.8) rotateZ(360deg);
     }
   }
   @keyframes logo-animation {
     0% {
-        -webkit-transform: rotate(0);
-            transform: rotate(0);
+      -webkit-transform: scale(0.8) rotateZ(0);
+              transform: scale(0.8) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(1.25) rotateZ(180deg);
+              transform: scale(1.25) rotateZ(180deg);
     }
     100% {
-        -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+      -webkit-transform: scale(0.8) rotateZ(360deg);
+              transform: scale(0.8) rotateZ(360deg);
     }
   }
 
