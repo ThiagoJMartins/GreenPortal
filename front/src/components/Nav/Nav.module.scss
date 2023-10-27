@@ -31,7 +31,6 @@
     }
 }
 
-
 .wrapperItems1{
     display: flex;
     align-items: center;
@@ -46,6 +45,11 @@
 .linkNav{
     text-decoration: none;
     color: inherit;
+    &:hover{
+        color: greenyellow;
+        transform: scale(1.1);
+        transition-duration: 0.5s;
+    }
 };
 
 
@@ -55,6 +59,8 @@
     cursor: pointer;
     &:hover{
         color: greenyellow;
+        transform: scale(1.1);
+        transition-duration: 0.5s;
     }
     padding: 10px;
 }

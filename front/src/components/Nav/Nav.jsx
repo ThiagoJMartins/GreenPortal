@@ -19,6 +19,12 @@ export default function Nav(props) {
             </div>
 
             <div className={styles.secondSection}>
+                <div className={styles.wrapperItems2}>
+                    <span onClick={props.logout} className={styles.itemNav} id="logout">Logout</span>
+                    <Link to={'/about'} className={styles.linkNav}>
+                        <span className={styles.itemNav} id="about">About</span>
+                    </Link>
+                </div>
                 <div className={styles.wrapperItems1}>
                     <Link to={'/home'} className={styles.linkNav}>
                         <span className={styles.itemNav} id="home">Home</span>
@@ -35,12 +41,7 @@ export default function Nav(props) {
                 </div>
 
 
-                <div className={styles.wrapperItems2}>
-                    <Link to={'/about'} className={styles.linkNav}>
-                        <span className={styles.itemNav} id="about">About</span>
-                    </Link>
-                    <span onClick={props.logout} className={styles.itemNav} id="logout">Logout</span>
-                </div>
+                
 
             </div>
 

@@ -28,11 +28,7 @@ const Form = ({ login }) => {
 
 
     return ( 
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-          }}>
+          <div className={styles.form}>
             <form className={styles.container}>
               <div>
                 <img className={styles.logo} src="../../public/portal.png" alt="" />
