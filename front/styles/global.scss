@@ -26,3 +26,20 @@ body {
     z-index: -1;
     box-shadow: 0 0 2em 2em black;
 }
+
+::-webkit-scrollbar{
+  width: 15px;
+}
+
+::-webkit-scrollbar-track{
+  border: 10px solid #000000c1;
+}
+
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: linear-gradient(
+    45deg,
+    #009ec9,
+    #00af2c
+  );
+}
