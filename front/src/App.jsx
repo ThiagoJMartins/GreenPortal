@@ -1,6 +1,8 @@
 import axios from 'axios';
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { Routes, Route, useLocation, useNavigate} from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { removeFav } from './redux/actions';
 //!----------------------------------------------------+/
 import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
@@ -25,6 +27,7 @@ function App() {
    const [characters, setCharacters] = useState([])
    const { pathname } = useLocation()
    const navigate = useNavigate()
+   const dispatch = useDispatch()
 
 
    const onSearch = (id) => {
@@ -49,13 +52,8 @@ function App() {
    }
 
    const onClose = (id) => {
+      dispatch(removeFav(id));
       setCharacters(characters.filter(char => char.id !== Number(id)))
-   }
-
-   function getRandomCharacter() {
-      const totalChars = 826
-      const randomId = Math.floor(Math.random() * totalChars) + 1
-      onSearch(randomId)
    }
 
   function login(userData) {
@@ -72,14 +70,14 @@ function App() {
       navigate('/')
    }
 
-   useEffect(() => {
+   useMemo(() => {
       !access && navigate('/');
    }, [access]);
 
    return (
       <div className='App'>
    
-          {pathname !== '/' && <Nav onSearch={onSearch} getRandomCharacter={ getRandomCharacter } logout={logout}/> }
+          {pathname !== '/' && <Nav onSearch={onSearch} logout={logout}/> }
         
          <Routes>
             <Route path='/home' element={ <Cards characters={characters} onClose={onClose} /> } />

@@ -1,11 +1,11 @@
 import { Link } from 'react-router-dom';
 import styles from './Card.module.scss';
 import { addFav, removeFav } from '../../redux/actions';
-import { connect } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useState, useEffect } from 'react';
 //!----------------------------------------------------+/
 
-export function Card({
+export default function Card({
    onClose,
    name,
    status,
@@ -14,12 +14,12 @@ export function Card({
    origin,
    image,
    id,
-   addFav,
-   removeFav,
-   myFavourites,
 }) {
 
    const [isFav, setIsFav] = useState(false)
+
+   const dispatch = useDispatch()
+   const myFavourites = useSelector((state) => state.myFavourites)
 
    const handleFavourite = () => {
       const character = {
@@ -34,10 +34,10 @@ export function Card({
 
       if (isFav) {
          setIsFav(false);
-         removeFav(id);
+         dispatch(removeFav(id))
       } else {
          setIsFav(true);
-         addFav(character)
+         dispatch(addFav(character))
       }
    }
 
@@ -75,22 +75,3 @@ export function Card({
       </div>
    );
 }
-
-export const mapDispatchToProps = (dispatch) => {
-   return {
-      addFav: (character) => {
-         dispatch(addFav(character))
-      },
-      removeFav: (id) => {
-         dispatch(removeFav(id))
-      },
-   };
-};
-
-export const mapStateToProps = (state) => {
-   return {
-      myFavourites: state.myFavourites
-   }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Card)

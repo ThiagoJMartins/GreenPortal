@@ -12,7 +12,10 @@ export default function Nav(props) {
         <div className={styles.navContainer}>
 
             <div className={styles.logo}>
-                <img src={Logo} alt="logo" width={200} />
+                <Link to={'/home'}>
+                    <img src={Logo} alt="logo" width={200} />
+                </Link>
+                
             </div>
 
             <div className={styles.secondSection}>
