@@ -17,12 +17,12 @@ function About() {
             </div>
             <div className={styles.techs}>
                 <h3 className={styles.h3abT}> Technologies used in the project:</h3>
-                <p>React Js</p>
-                <p>Redux</p>
-                <p>SCSS</p>
-                <p>Node Js</p>
-                <p>Express</p>
-                <p>Axios</p>
+                <p className={styles.p}>React Js</p>
+                <p className={styles.p}>Redux</p>
+                <p className={styles.p}>SCSS</p>
+                <p className={styles.p}>Node Js</p>
+                <p className={styles.p}>Express</p>
+                <p className={styles.p}>Axios</p>
             </div>
         </div>
     )

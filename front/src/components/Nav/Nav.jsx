@@ -19,7 +19,7 @@ export default function Nav(props) {
             </div>
 
             <div className={styles.secondSection}>
-                <div className={styles.wrapperItems}>
+                <div className={styles.wrapperItems1}>
                     <Link to={'/home'} className={styles.linkNav}>
                         <span className={styles.itemNav} id="home">Home</span>
                     </Link>
@@ -35,7 +35,7 @@ export default function Nav(props) {
                 </div>
 
 
-                <div className={styles.wrapperItems}>
+                <div className={styles.wrapperItems2}>
                     <Link to={'/about'} className={styles.linkNav}>
                         <span className={styles.itemNav} id="about">About</span>
                     </Link>

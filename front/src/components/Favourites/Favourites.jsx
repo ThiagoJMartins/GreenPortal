@@ -23,18 +23,20 @@ const Favourites = () => {
 
     return (
         <div>
-            <select onChange={handleOrder}>
-                <option value="default">--------</option>
-                <option value="A">Ascendant</option>
-                <option value="D">Descendant</option>
-            </select>
-            <select onChange={handleFilter}>
-                <option value="All">All</option>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Genderless">Genderless</option>
-                <option value="unknown">Unknown</option>
-            </select>
+            <div className={styles.selectContainer}>
+                <select className={styles.selectFilter} onChange={handleOrder}>
+                    <option value="default">---ORDER---</option>
+                    <option value="A">Ascendant</option>
+                    <option value="D">Descendant</option>
+                </select>
+                <select className={styles.selectFilter} onChange={handleFilter}>
+                    <option value="All">---GENDERS---</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Genderless">Genderless</option>
+                    <option value="unknown">Unknown</option>
+                </select>
+            </div>
             <div className={styles.cardsContainer}>
                 {myFavourites?.map((fav) => (
                     <Card
