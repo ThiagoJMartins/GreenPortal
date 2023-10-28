@@ -1,4 +1,4 @@
-.detailAbsolute{
+.detailAbsolute {
   display: flex;
   justify-content: center;
 }
@@ -17,83 +17,83 @@
   border-radius: 20px;
   margin: 0.5rem;
   margin-top: 3rem;
-  box-shadow: 3px 6px 15px 4px  rgba(24, 161, 17, 0.368);
+  box-shadow: 3px 6px 15px 4px rgba(24, 161, 17, 0.368);
   transition: all 0.3s ease-in-out;
 }
 
-.name{
-    font-size: 6rem;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-    animation: move 1s ease-in-out infinite alternate;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    box-shadow: none;
+.name {
+  font-size: 6rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  animation: move 1s ease-in-out infinite alternate;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  box-shadow: none;
 }
 
-.name:hover{
-    color: white;
-    text-shadow: 0px 0px 5px  white;
+.name:hover {
+  color: white;
+  text-shadow: 0px 0px 5px white;
 }
 
 @keyframes move {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(10px);
-    }
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
 }
 
-.image{
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    justify-content: center;
-    align-self: center;
+.image {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  justify-content: center;
+  align-self: center;
 }
 
-.image:hover{
-    transform: rotate(3deg) translateX(2px) translateY(2px);
-    box-shadow: 3px 6px 15px 4px  rgba(28, 219, 18, 0.368);
+.image:hover {
+  transform: rotate(3deg) translateX(2px) translateY(2px);
+  box-shadow: 3px 6px 15px 4px rgba(28, 219, 18, 0.368);
 }
 
 @keyframes shake {
-    0% {
-      transform: rotate(0deg);
-    }
-    20% {
-      transform: rotate(3deg);
-    }
-    40% {
-      transform: rotate(-3deg);
-    }
-    60% {
-      transform: rotate(2deg);
-    }
-    80% {
-      transform: rotate(-2deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(3deg);
+  }
+  40% {
+    transform: rotate(-3deg);
+  }
+  60% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
-.text { 
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1rem;
-    transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
-    box-shadow: none;
+.text {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+  box-shadow: none;
 }
 
-.episodeBtn{
+.episodeBtn {
   border: none;
   background-color: initial;
   cursor: pointer;
@@ -104,13 +104,13 @@
 }
 
 .episodeBtn:hover {
-  color:  rgb(2, 137, 0);
+  color: rgb(2, 137, 0);
   transform: scale(1.2);
   transition-duration: 0.5s;
   border-radius: 100px;
 }
 
-.episodes{
+.episodes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@
   color: rgb(0, 0, 0);
 }
 
-.episodeBubble{
+.episodeBubble {
   font-weight: 600;
   background-color: white;
   border-radius: 100%;
@@ -135,7 +135,7 @@
   margin-top: -20px;
 }
 
-.episodeText{
+.episodeText {
   color: white;
   text-align: center;
   align-items: center;
@@ -144,14 +144,14 @@
   margin-top: 0px;
 }
 
-.episodeBox{
+.episodeBox {
   margin-bottom: 40px;
 }
 
-.loading{
-    font-size: 3rem;
-    text-align: center;
-    justify-self: center;
-    color: white;
-    animation: move 1s ease-in-out infinite alternate;
+.loading {
+  font-size: 3rem;
+  text-align: center;
+  justify-self: center;
+  color: white;
+  animation: move 1s ease-in-out infinite alternate;
 }

@@ -1,75 +1,71 @@
-.navContainer{
-    background-color: #00000039;
-    min-height: 50px;
-    padding: 0px 14px;
+.navContainer {
+  background-color: #00000039;
+  min-height: 50px;
+  padding: 0px 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @include sm {
+    flex-direction: column;
+    padding: 8px 0px;
+  }
+
+  .logo {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    @include sm{
-        flex-direction: column;
-        padding: 8px 0px;
-    }
-
-    .logo{
-        display: flex;
-        padding-bottom: 15px;
-    }
-    
+    padding-bottom: 15px;
+  }
 }
 
+.secondSection {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-.secondSection{
-    flex: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-    @include sm{
-        width: 100%;
-    }
+  @include sm {
+    width: 100%;
+  }
 }
 
-.wrapperItems1{
-    display: flex;
-    align-items: center;
+.wrapperItems1 {
+  display: flex;
+  align-items: center;
 }
 
-.wrapperItems2{
-    display: flex;
-    align-items: center;
+.wrapperItems2 {
+  display: flex;
+  align-items: center;
 }
 
+.linkNav {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: greenyellow;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+}
 
-.linkNav{
-    text-decoration: none;
-    color: inherit;
-    &:hover{
-        color: greenyellow;
-        transform: scale(1.1);
-        transition-duration: 0.5s;
-    }
-};
-
-
-.itemNav{
-    color: $white;
-    font-size: 15px;
-    cursor: pointer;
-    &:hover{
-        color: greenyellow;
-        transform: scale(1.1);
-        transition-duration: 0.5s;
-    }
-    padding: 10px;
+.itemNav {
+  color: $white;
+  font-size: 15px;
+  cursor: pointer;
+  &:hover {
+    color: greenyellow;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+  }
+  padding: 10px;
 }
 
 .button {
-    background-color: rgb(7, 7, 49);
-    color: rgb(198, 250, 10);
-    border: none;
-    cursor: pointer;
-    margin: 5px 0px;
-    padding: 7px 6px;
-  }
+  background-color: rgb(7, 7, 49);
+  color: rgb(198, 250, 10);
+  border: none;
+  cursor: pointer;
+  margin: 5px 0px;
+  padding: 7px 6px;
+}

@@ -1,45 +1,45 @@
-.cardsContainer{
-    padding: 16px 24px;
-    display: flex;
-    flex-wrap: wrap;
-    min-height: 100vh;
-    height: auto;
-    justify-content: space-between;
+.cardsContainer {
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  height: auto;
+  justify-content: space-between;
 }
 
-.selectFilter{
-    padding: 3px 6px;
-    margin: 0px 10px;
-    font-size: 12px;
-    background-color: rgba(0, 0, 0, 0.306);
-    border: 1px solid rgba(24, 161, 17, 0.368);
-    color: white;
-    cursor: pointer;
-    outline: none;
-    text-align: center;
+.selectFilter {
+  padding: 3px 6px;
+  margin: 0px 10px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.306);
+  border: 1px solid rgba(24, 161, 17, 0.368);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
 }
 
-.selectFilter:hover{
-    box-shadow: 3px 6px 15px 10px  rgba(24, 161, 17, 0.368);
+.selectFilter:hover {
+  box-shadow: 3px 6px 15px 10px rgba(24, 161, 17, 0.368);
 }
 
-select:focus{
-    border: 2px solid rgba(24, 161, 17, 0.368);
+select:focus {
+  border: 2px solid rgba(24, 161, 17, 0.368);
 }
 
-select::-ms-expand{
-    display: none;
+select::-ms-expand {
+  display: none;
 }
 
-select option{
-    padding: 10px;
+select option {
+  padding: 10px;
 }
 
-.selectContainer{
-    background-color: #00000039;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+.selectContainer {
+  background-color: #00000039;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
