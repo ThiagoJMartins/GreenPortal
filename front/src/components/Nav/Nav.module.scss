@@ -14,8 +14,14 @@
 
   .logo {
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    padding-top: 5px;
   }
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition-duration: 0.5s;
 }
 
 .secondSection {
@@ -44,7 +50,7 @@
   color: inherit;
   &:hover {
     color: greenyellow;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition-duration: 0.5s;
   }
 }
@@ -55,8 +61,9 @@
   cursor: pointer;
   &:hover {
     color: greenyellow;
-    transform: scale(1.1);
+    transform: scale(1.2);
     transition-duration: 0.5s;
+    text-shadow: 0px 0px 10px greenyellow;
   }
   padding: 10px;
 }
