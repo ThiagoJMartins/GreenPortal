@@ -27,24 +27,29 @@
     -webkit-transform: scale(0.8) rotateZ(0);
     transform: scale(0.8) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(1.25) rotateZ(180deg);
     transform: scale(1.25) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(0.8) rotateZ(360deg);
     transform: scale(0.8) rotateZ(360deg);
   }
 }
+
 @keyframes logo-animation {
   0% {
     -webkit-transform: scale(0.8) rotateZ(0);
     transform: scale(0.8) rotateZ(0);
   }
+
   50% {
     -webkit-transform: scale(1.25) rotateZ(180deg);
     transform: scale(1.25) rotateZ(180deg);
   }
+
   100% {
     -webkit-transform: scale(0.8) rotateZ(360deg);
     transform: scale(0.8) rotateZ(360deg);

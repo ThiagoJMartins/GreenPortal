@@ -48,6 +48,7 @@
 .linkNav {
   text-decoration: none;
   color: inherit;
+
   &:hover {
     color: greenyellow;
     transform: scale(1.2);
@@ -59,12 +60,14 @@
   color: $white;
   font-size: 15px;
   cursor: pointer;
+
   &:hover {
     color: greenyellow;
     transform: scale(1.2);
     transition-duration: 0.5s;
     text-shadow: 0px 0px 10px greenyellow;
   }
+
   padding: 10px;
 }
 
