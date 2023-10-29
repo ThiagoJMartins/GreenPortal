@@ -15,9 +15,6 @@ import Favourites from "./components/Favourites/Favourites";
 
 function App() {
   const APIKEY = "pi-thiagojmartins";
-  // const EMAIL = ''
-  // const PASSWORD = ''
-  //! disabled creddentials
   const EMAIL = "thiagodev.martins@gmail.com";
   const PASSWORD = "Thiago228";
 
