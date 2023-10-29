@@ -1,5 +1,6 @@
-import SearchBar from "../SearchBar/SearchBar";
 import { Link } from "react-router-dom";
+//!----------------------------------------------------+/
+import SearchBar from "../SearchBar/SearchBar";
 import Logo from "../../../public/Logo.svg";
 import styles from "./Nav.module.scss";
 //!----------------------------------------------------+/

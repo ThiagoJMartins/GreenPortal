@@ -1,4 +1,5 @@
 import { ADD_FAV, REMOVE_FAV, FILTER_CARDS, ORDER_CARDS } from "./action-types";
+//!----------------------------------------------------+/
 
 export const addFav = (character) => {
   return {

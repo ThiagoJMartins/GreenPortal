@@ -1,9 +1,9 @@
-import axios from "axios";
 import { useState, useMemo } from "react";
-import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { removeFav } from "./redux/actions";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
+import axios from "axios";
 //!----------------------------------------------------+/
+import { removeFav } from "./redux/actions";
 import Cards from "./components/Cards/Cards";
 import Nav from "./components/Nav/Nav";
 import About from "./components/About/About";

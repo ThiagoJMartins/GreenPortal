@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
-import { filterCards, orderCards } from "../../redux/actions";
 import { useState } from "react";
+//!----------------------------------------------------+/
+import { filterCards, orderCards } from "../../redux/actions";
 import Card from "../Card/Card";
 import styles from "./Favourites.module.scss";
+//!----------------------------------------------------+/
 
 const Favourites = () => {
   const myFavourites = useSelector((state) => state.myFavourites);

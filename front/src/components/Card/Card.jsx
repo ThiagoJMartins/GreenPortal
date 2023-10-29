@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
-import styles from "./Card.module.scss";
-import { addFav, removeFav } from "../../redux/actions";
-import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
+//!----------------------------------------------------+/
+import { addFav, removeFav } from "../../redux/actions";
+import styles from "./Card.module.scss";
 //!----------------------------------------------------+/
 
 export default function Card({
