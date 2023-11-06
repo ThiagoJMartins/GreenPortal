@@ -42,10 +42,10 @@ function Detail() {
 							src={character.image}
 							alt={character.name}
 						/>
-						<h4 className={styles.text}>STATUS | {character.status}</h4>
-						<h4 className={styles.text}>SPECIES | {character.species}</h4>
-						<h4 className={styles.text}>GENDER | {character.gender}</h4>
-						<h4 className={styles.text}>ORIGIN | {character.origin.name}</h4>
+						<h4 className={styles.text}>STATUS: {character.status}</h4>
+						<h4 className={styles.text}>SPECIES: {character.species}</h4>
+						<h4 className={styles.text}>GENDER: {character.gender}</h4>
+						<h4 className={styles.text}>ORIGIN: {character.origin.name}</h4>
 
 						{/* <h4 className={styles.text}>
 							LOCATION | {character.location.name}
