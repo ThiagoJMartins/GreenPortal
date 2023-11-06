@@ -1,8 +1,6 @@
 const http = require("http");
 const characters = require("./utils/data");
 //!----------------------------------------------------+/
-const PORT = 3001;
-
 http
 	.createServer((req, res) => {
 		res.setHeader("Access-Control-Allow-Origin", "*");
@@ -20,4 +18,4 @@ http
 			return res.end(JSON.stringify(character));
 		}
 	})
-	.listen(PORT, "localhost");
+	.listen(3001, "localhost");
