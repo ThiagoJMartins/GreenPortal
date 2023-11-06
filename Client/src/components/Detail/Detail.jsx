@@ -42,15 +42,14 @@ function Detail() {
 							src={character.image}
 							alt={character.name}
 						/>
+
 						<h4 className={styles.text}>STATUS: {character.status}</h4>
 						<h4 className={styles.text}>SPECIES: {character.species}</h4>
 						<h4 className={styles.text}>GENDER: {character.gender}</h4>
 						<h4 className={styles.text}>ORIGIN: {character.origin.name}</h4>
 
-						{/* <h4 className={styles.text}>
-							LOCATION | {character.location.name}
-						</h4> */}
-						{/* <button className={styles.episodeBtn} onClick={handleEpisodes}>
+						<h4 className={styles.text}>LOCATION: {character.location.name}</h4>
+						<button className={styles.episodeBtn} onClick={handleEpisodes}>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								height="2.5em"
@@ -58,7 +57,7 @@ function Detail() {
 								fill="white">
 								<path d="M64 64V352H576V64H64zM0 64C0 28.7 28.7 0 64 0H576c35.3 0 64 28.7 64 64V352c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zM128 448H512c17.7 0 32 14.3 32 32s-14.3 32-32 32H128c-17.7 0-32-14.3-32-32s14.3-32 32-32z" />
 							</svg>
-						</button> */}
+						</button>
 
 						{isOpen && (
 							<div className={styles.episodeBox}>
