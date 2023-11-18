@@ -1,21 +1,17 @@
-const http = require("http");
-const characters = require("./utils/data");
+const cors = require("cors");
+const express = require("express");
+const morgan = require("morgan");
+const router = require("./routes/index");
+const PORT = 3001;
 //!----------------------------------------------------+/
-http
-	.createServer((req, res) => {
-		res.setHeader("Access-Control-Allow-Origin", "*");
 
-		const { url } = req;
+const server = express();
 
-		if (url.includes("/rickandmorty/character")) {
-			const id = Number(url.split("/").at(-1));
+server.use(morgan("dev"));
+server.use(cors());
+server.use(express.json());
+server.use("/rickandmorty", router);
 
-			const character = characters.find((char) => {
-				return char.id === id;
-			});
-
-			res.writeHead(200, { "Content-Type": "application/json" });
-			return res.end(JSON.stringify(character));
-		}
-	})
-	.listen(3001, "localhost");
+server.listen(PORT, () => {
+  console.log(`Server is listening on port ${PORT}`);
+});

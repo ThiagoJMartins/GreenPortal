@@ -11,17 +11,13 @@ const rootReducer = (state = initialState, { type, payload }) => {
     case ADD_FAV:
       return {
         ...state,
-        myFavourites: [...state.myFavourites, payload],
-        allCharacters: [...state.allCharacters, payload],
+        myFavourites: payload,
+        allCharacters: payload,
       };
     case REMOVE_FAV:
-      let favourites = state.myFavourites.filter((favourite) => {
-        return favourite.id !== parseInt(payload);
-      });
-
       return {
         ...state,
-        myFavourites: favourites,
+        myFavourites: payload,
       };
     case FILTER_CARDS:
       if (payload === "All")
