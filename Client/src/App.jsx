@@ -40,7 +40,6 @@ function App() {
   };
 
   const onClose = (id) => {
-    dispatch(removeFav(id));
     setCharacters(characters.filter((char) => Number(char.id) !== Number(id)));
   };
 
