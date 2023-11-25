@@ -1,21 +1,33 @@
 .searchbar {
   background-color: white;
   position: relative;
-  width: 250px;
-  height: 25px;
+  width: 300px;
+  height: 30px;
   align-items: center;
   border-radius: 6px;
 
   input {
     border: none;
     background-color: inherit;
+    font-size: 15px;
 
     &:focus {
       outline: none;
     }
   }
 
+  &:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    box-shadow: 10px 10px 10px green;
+  }
+  &:not(:hover) {
+    transform: scale(1);
+    transition-duration: 0.5s;
+  }
+
   .searchbutton {
+    font-size: 20px;
     position: absolute;
     border: none;
     background-color: inherit;

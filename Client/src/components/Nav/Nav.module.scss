@@ -24,6 +24,11 @@
   transition-duration: 0.5s;
 }
 
+.logo:not(:hover) {
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+
 .secondSection {
   flex: 1;
   display: flex;
@@ -54,6 +59,12 @@
     transform: scale(1.2);
     transition-duration: 0.5s;
   }
+
+  &:not(:hover) {
+    color: white;
+    transform: scale(1);
+    transition-duration: 0.5s;
+  }
 }
 
 .itemNav {
@@ -66,6 +77,12 @@
     transform: scale(1.2);
     transition-duration: 0.5s;
     text-shadow: 0px 0px 10px greenyellow;
+  }
+
+  &:not(:hover) {
+    color: white;
+    transform: scale(1);
+    transition-duration: 0.5s;
   }
 
   padding: 10px;

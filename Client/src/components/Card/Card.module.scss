@@ -21,6 +21,11 @@
   transition-duration: 0.5s;
 }
 
+.tarjeta:not(:hover) {
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+
 .boton {
   width: 100%;
   font-size: 1.4rem;
