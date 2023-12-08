@@ -17,13 +17,13 @@
 }
 
 .tarjeta:hover {
-  transform: scale(1.1);
-  transition-duration: 0.5s;
+  transform: scale(1.05);
+  transition-duration: 0.25s;
 }
 
 .tarjeta:not(:hover) {
   transform: scale(1);
-  transition-duration: 0.5s;
+  transition-duration: 0.25s;
 }
 
 .boton {

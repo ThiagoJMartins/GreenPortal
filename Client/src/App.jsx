@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useState, useEffect, useMemo } from "react";
 import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 //!----------------------------------------------------+/
@@ -67,7 +66,7 @@ function App() {
 		navigate("/");
 	}
 
-	useEffect(() => {
+	useMemo(() => {
 		!access && navigate("/");
 	}, [access]);
 

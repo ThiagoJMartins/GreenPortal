@@ -65,8 +65,9 @@
   color: greenyellow;
 }
 
-.input:hover {
-  border: greenyellow 2px solid;
+.entries:focus-visible {
+  border: none;
+  outline: greenyellow 2px solid;
 }
 
 p {

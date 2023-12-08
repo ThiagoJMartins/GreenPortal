@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 //!----------------------------------------------------+/
@@ -41,9 +41,9 @@ export default function Card({
 		}
 	};
 
-	useEffect(() => {
-		myFavourites?.forEach((fav) => {
-			if (fav.id === id) {
+	useMemo(() => {
+		myFavourites.forEach((fav) => {
+			if (fav.id === parseInt(id)) {
 				setIsFav(true);
 			}
 		});
