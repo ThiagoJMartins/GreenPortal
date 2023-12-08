@@ -115,6 +115,7 @@
   transform: scale(1);
   transition-duration: 0.5s;
 }
+
 .episodes {
   display: flex;
   justify-content: space-evenly;
@@ -129,7 +130,7 @@
 .episodeBubble {
   background-color: white;
   border-radius: 100%;
-  font-size: 12px;
+  font-size: 15px;
   height: 20px;
   width: 20px;
   text-align: center;

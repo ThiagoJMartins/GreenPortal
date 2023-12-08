@@ -1,5 +1,11 @@
 import axios from "axios";
-import { ADD_FAV, REMOVE_FAV, FILTER_CARDS, ORDER_CARDS } from "./action-types";
+import {
+	ADD_FAV,
+	REMOVE_FAV,
+	FILTER_CARDS,
+	ORDER_CARDS,
+	GET_FAV,
+} from "./action-types";
 //!----------------------------------------------------+/
 
 const URL = "http://localhost:3001/rickandmorty/fav";
@@ -46,4 +52,18 @@ const orderCards = (order) => {
 	};
 };
 
-export { addFav, removeFav, filterCards, orderCards };
+const getFav = () => {
+	return async (dispatch) => {
+		try {
+			const { data } = await axios.get(URL);
+			return dispatch({
+				type: GET_FAV,
+				payload: data,
+			});
+		} catch (error) {
+			console.log(error);
+		}
+	};
+};
+
+export { addFav, removeFav, filterCards, orderCards, getFav };
