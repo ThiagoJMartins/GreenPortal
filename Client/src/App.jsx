@@ -9,6 +9,7 @@ import Detail from "./components/Detail/Detail";
 import Error from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import Favourites from "./components/Favourites/Favourites";
+import Register from "./components/Register/Register";
 //!----------------------------------------------------+/
 
 function App() {
@@ -57,6 +58,18 @@ function App() {
 			access && navigate("/home");
 		} catch ({ response }) {
 			const { data } = response;
+			alert("Incorrect credentials");
+		}
+	};
+
+	const register = async (userData) => {
+		try {
+			const URL = "http://localhost:3001/rickandmorty/login/";
+			const { data } = await axios.post(URL, userData);
+			alert("User has been registered successfully");
+			navigate("/");
+		} catch ({ response }) {
+			const { data } = response;
 			alert(data.message);
 		}
 	};
@@ -72,7 +85,9 @@ function App() {
 
 	return (
 		<div className="App">
-			{pathname !== "/" && <Nav onSearch={onSearch} logout={logout} />}
+			{pathname !== "/" && pathname !== "/register" && (
+				<Nav onSearch={onSearch} logout={logout} />
+			)}
 
 			<Routes>
 				<Route
@@ -84,6 +99,7 @@ function App() {
 				<Route path="/detail/:id" element={<Detail />} />
 				<Route path="*" element={<Error />} />
 				<Route path="/" element={<Form login={login} />} />
+				<Route path="/register" element={<Register register={register} />} />
 			</Routes>
 		</div>
 	);

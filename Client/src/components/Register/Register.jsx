@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 //!----------------------------------------------------+/
 import validate from "../../utils/validation";
-import styles from "./form.module.scss";
+import styles from "./Register.module.scss";
 //!----------------------------------------------------+/
 
-const Form = ({ login }) => {
+const Register = ({ register }) => {
 	const [userData, setUserData] = useState({
 		email: "",
 		password: "",
@@ -24,14 +24,14 @@ const Form = ({ login }) => {
 
 	const handleSubmit = (event) => {
 		event.preventDefault();
-		login(userData);
+		register(userData);
 	};
 
 	return (
 		<div className={styles.form}>
 			<form className={styles.container}>
 				<div>
-					<img className={styles.logo} src="../../public/portal.png" alt="" />
+					<img className={styles.logo} src="../../public/portalB.png" alt="" />
 				</div>
 				<label>Email</label>
 				<input
@@ -56,15 +56,15 @@ const Form = ({ login }) => {
 				<span className={styles.warning}>{errors.password}</span>
 				<br />
 				<button className={styles.boton} type="submit" onClick={handleSubmit}>
-					Login
+					Signup
 				</button>
 				<br />
-				<Link to="/register" className={styles.linkNav}>
-					<span className={styles.linkRegister}>Signup</span>
+				<Link to="/" className={styles.linkNav}>
+					<span className={styles.linkLogin}>Login</span>
 				</Link>
 			</form>
 		</div>
 	);
 };
 
-export default Form;
+export default Register;

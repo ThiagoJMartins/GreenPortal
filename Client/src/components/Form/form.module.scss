@@ -16,8 +16,8 @@
 }
 
 .logo {
-  height: 150px;
-  width: 150px;
+  height: 125px;
+  width: 125px;
   -webkit-animation: logo-animation 3s linear infinite both;
   animation: logo-animation 3s linear infinite both;
 }
@@ -105,4 +105,23 @@ label {
 
 .warning {
   color: red;
+}
+
+.linkRegister {
+  display: flex;
+  justify-content: end;
+  font-size: 15px;
+  color: rgb(50, 47, 255);
+  margin-bottom: 10px;
+  padding-top: 3px;
+  font-weight: bold;
+  transition: 1s;
+}
+
+.linkRegister:hover {
+  color: aquamarine;
+}
+
+.linkNav {
+  text-decoration: none;
 }
