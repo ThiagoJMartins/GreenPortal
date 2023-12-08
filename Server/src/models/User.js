@@ -6,8 +6,10 @@ module.exports = (sequelize) => {
 		{
 			id: {
 				type: DataTypes.INTEGER,
-				allowNull: null,
+				allowNull: false,
 				primaryKey: true,
+				unique: true,
+				autoIncrement: true,
 			},
 			email: {
 				type: DataTypes.STRING,

@@ -5,7 +5,7 @@ const FavoriteModel = require("./models/Favorite");
 const UserModel = require("./models/User");
 
 const sequelize = new Sequelize(
-	`postgres://DB_USER:DB_PASSWORD@DB_HOST/rickandmorty`,
+	`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/rickandmorty`,
 	{ logging: false, native: false }
 );
 

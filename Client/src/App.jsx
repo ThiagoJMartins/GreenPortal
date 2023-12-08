@@ -32,13 +32,13 @@ function App() {
 				if (characterExists.length === 0) {
 					setCharacters((oldChars) => [...oldChars, data]);
 				} else {
-					throw Error("This character has already been added");
+					alert("This character has already been added");
 				}
-			} else {
-				throw Error("Not character found with this ID");
 			}
-		} catch (error) {
-			console.error(error.res.data.message);
+		} catch ({ response }) {
+			const { data } = response;
+			console.log(data.error);
+			alert("There is no character with this ID");
 		}
 	};
 
@@ -46,18 +46,21 @@ function App() {
 		setCharacters(characters.filter((char) => Number(char.id) !== Number(id)));
 	};
 
-	async function login({ email, password }) {
+	const login = async (userData) => {
 		try {
+			const { email, password } = userData;
+			const URL = "http://localhost:3001/rickandmorty/login/";
 			const { data } = await axios(
-				`${URL}login?email=${email}&password=${password}`
+				URL + `?email=${email}&password=${password}`
 			);
 			const { access } = data;
 			setAccess(access);
 			access && navigate("/home");
-		} catch (error) {
-			console.error(error.res.data.message);
+		} catch ({ response }) {
+			const { data } = response;
+			alert(data.message);
 		}
-	}
+	};
 
 	function logout() {
 		setAccess(false);
