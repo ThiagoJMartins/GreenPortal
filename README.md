@@ -1,25 +1,45 @@
-# Proyecto Integrador
+## ESPAÑOL
 
-En este repositorio deberás desarrollar tu Proyecto Integrador. Durante el Módulo 2 trabajarás principalmente en la carpeta "front", luego en el Módulo 3 empezarás a utilizar la carpeta "back" (puedes dejarla así como está por el momento).
+# Aplicación de Rick y Morty
 
-En la carpeta "front" te encontrarás con un Proyecto inicializado con el Framework Vite. NO TE PREOCUPES, no debes cambiar ninguna configuración. Simplemente sigue las instrucciones de tu Instructor/a que te irá guiando y de las consignas de la Homework.
+Este proyecto es una aplicación web que permite a los usuarios navegar a través de los personajes de la serie animada "Rick y Morty" e interactuar con ellos. La aplicación utiliza la [API de Rick y Morty](https://rickandmortyapi.com/) para obtener la información de los personajes.
+Este proyecto es parte del bootcamp de Soy Henry.
 
-Recuerda que para realizar las peticiones a la API externa de Rick & Morty, utilizaremos la siguiente URL como ejemplo:
+## Cómo usar la aplicación
 
-https://rym2.up.railway.app/api/character/10?key={tu-api-key}
+Para utilizar la aplicación, Loguearse con el usuario (Email: Thiagozambonini24@gmail.com Pass: Thiago123) y explorar las distintas secciones de la pagina, como el buscador de personajes por ID, los favoritos o la galeria de personajes totales, tambien puedes navegar por el detalle de cada personaje o filtrarlos comodamente en el home. La aplicación es fácil de usar y tiene un diseño amigable, que plama la combinacion entre simpleza y efectividad para hacer la experiencia del usuario lo mas placentera posible.
 
-Donde tu API KEY está compuesta de la siguiente manera: `pi-{tu-usuario-de-github}`
+## Tecnologías utilizadas
 
-Recuerda que tu usuario de Github debe ir en minúsculas, por ejemplo: `pi-misuaurio`
+- React
+- Redux
+- Express
+- Axios
 
-Puedes encontrar además tu API KEY en la descripción de este repositorio.
+## Enlaces
+- [API de Rick y Morty](https://rickandmortyapi.com/)
+- [Link del Sitio Web](https://rickandmortyapi.com/)
+- [Mi perfil de LinkedIn](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
 
-Aspectos a tener en cuenta:
+## INGLES
 
-- Recuerda ir PUSHEANDO los avances de tu proyecto diariamente. No importa si avanzaste mucho, poco, o todavía tienes consignas por completar. Es importante que vayas actualizando el repositorio con tu trabajo.
+# Rick and Morty Application
 
-- Es VITAL que utilices tu API KEY personal, y no la compartas con tus compañeros/as. 
+This project is a web application that allows users to navigate through the characters of the animated series "Rick and Morty" and interact with them. The application uses the [Rick and Morty API](https://rickandmortyapi.com/) to get the information about the characters.
+This project is part of the Soy Henry bootcamp.
 
-- Si alguna petición a la API te responde con un error, checkea bien que hayas escrito correctamente el endpoint y tu API KEY.
+## How to use the application
 
-Muchos éxitos en este Proyecto! 
+To use the application, log in with the user (Email: Thiagozambonini24@gmail.com Pass: Thiago123) and explore the different sections of the page, such as the character search by ID, the favorites or the total characters gallery, you can also browse the detail of each character or filter them comfortably in the home. The application is easy to use and has a friendly design, which combines simplicity and effectiveness to make the user experience as pleasant as possible.
+
+## Technologies used
+
+- React
+- Redux
+- Express
+- Axios
+
+## Links
+- [Rick and Morty API](https://rickandmortyapi.com/)
+- [Website Link](https://rickandmortyapi.com/)
+- [My LinkedIn profile](https://www.linkedin.com/in/thiago-zambonini-2a279a239/)
