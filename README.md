@@ -7,7 +7,7 @@ This project is part of the SoyHenry Bootcamp.
 
 ## How to use the application
 
-To use the application, log in with the user (Email: Thiagozambonini24@gmail.com Pass: Thiago123) and explore the different sections of the page, such as the character search by ID, the favorites or the total characters gallery, you can also browse the detail of each character or filter them comfortably in the home. The application is easy to use and has a friendly design, which combines simplicity and effectiveness to make the user experience as pleasant as possible.
+To use the application, log in with the user (Email: test@mail.com Pass: test123) and explore the different sections of the page, such as the character search by ID, the favorites or the total characters gallery, you can also browse the detail of each character or filter them comfortably in the home. The application is easy to use and has a friendly design, which combines simplicity and effectiveness to make the user experience as pleasant as possible.
 
 ## Technologies used
 
@@ -35,7 +35,7 @@ Este proyecto es parte del bootcamp de SoyHenry.
 
 ## Cómo usar la aplicación
 
-Para utilizar la aplicación, Loguearse con el usuario (Email: Thiagozambonini24@gmail.com Pass: Thiago123) y explorar las distintas secciones de la pagina, como el buscador de personajes por ID, los favoritos o la galeria de personajes totales, tambien puedes navegar por el detalle de cada personaje o filtrarlos comodamente en el home. La aplicación es fácil de usar y tiene un diseño amigable, que plama la combinacion entre simpleza y efectividad para hacer la experiencia del usuario lo mas placentera posible.
+Para utilizar la aplicación, Loguearse con el usuario (Email: test@mail.com Pass: test123) y explorar las distintas secciones de la pagina, como el buscador de personajes por ID, los favoritos o la galeria de personajes totales, tambien puedes navegar por el detalle de cada personaje o filtrarlos comodamente en el home. La aplicación es fácil de usar y tiene un diseño amigable, que plama la combinacion entre simpleza y efectividad para hacer la experiencia del usuario lo mas placentera posible.
 
 ## Tecnologías utilizadas
 
